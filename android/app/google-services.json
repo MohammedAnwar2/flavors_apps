@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331918924936",
+    "project_id": "app-test-distribution",
+    "storage_bucket": "app-test-distribution.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331918924936:android:0e048bc4459366026f533d",
+        "android_client_info": {
+          "package_name": "com.example.flavors"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeFt1B6NTFkawJXfiePCdZVa0DYsQNKsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
