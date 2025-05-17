@@ -17,6 +17,7 @@ platform :android do
 end
 
 # step to install fastlane the first time
+# https://docs.fastlane.tools/getting-started/android/setup/
 # 1. Install ruby and later check the version using "ruby -v"
 # 2. Install fastlane using "gem install fastlane" open the terminal and run the command
 # 3. create firebase project and add the app to firebase
@@ -29,6 +30,7 @@ end
 # 6. Run "bundle install" in the terminal to install the fastlane gem
 
 # step to setup fastlane every time
+# https://docs.fastlane.tools/getting-started/android/setup/
 # 1. Open the terminal of your project and navigate to the android directory
 # 2. Run "bundle exec fastlane init" or "fastlane init" to create the fastlane directory and Fastfile
 # 3. Open the Fastfile and add the above code
