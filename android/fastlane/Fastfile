@@ -1,0 +1,19 @@
+default_platform(:android)
+
+platform :android do
+  desc "This lane will build the app and upload it to Firebase App Distribution"
+  lane :firebase_distribution do
+    sh "flutter clean"
+    sh "flutter build apk --release --flavor production --target lib/main_production.dart --no-tree-shake-icons"
+    firebase_app_distribution(
+            app: "1:331918924936:android:0e048bc4459366026f533d",
+            firebase_cli_token: "1//0gJ0cya56UtbMCgYIARAAGBASNwF-L9IriwMtzOKLsxVQoYADCK3o75pkuFbQGAl7MCrpJxIlLqCXW7ioDppPQECsUMoEnLwswNc",
+            android_artifact_type: "APK",
+            android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
+            groups: "flavors_app",
+            release_notes: "Release notes for the new version"
+        )
+  end
+end
+# you should be in the android directory when you run the following command
+# Run "fastlane android firebase_distribution"
