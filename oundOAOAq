@@ -1,0 +1,80 @@
+[33mcommit c87eab0283972dacef92ec3d5ce5eb3194f88036[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m
+Merge: fdcc1b3 5d12c80
+Author: Mohammed Anwar Abbod Bin Muslem <84952928+MohammedAnwar2@users.noreply.github.com>
+Date:   Sun May 18 15:05:03 2025 +0530
+
+    Try to add sound
+    
+    Try to add sound
+
+[33mcommit 5d12c80e11a20c5150a95ae2cc771c32e4ce3358[m[33m ([m[1;31morigin/tryToAddSound[m[33m, [m[1;32mtryToAddSound[m[33m)[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sun May 18 15:01:18 2025 +0530
+
+    try to add sound when the notification appear
+
+[33mcommit 1d9c4b352a84768d615e3df7be3c2948219d95d3[m[33m ([m[1;31morigin/feedbackFeature[m[33m, [m[1;32mfeedbackFeature[m[33m)[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sun May 18 12:39:31 2025 +0530
+
+    add the feedback of firebase fidstribution for the testers
+
+[33mcommit fdcc1b3955d391120435a9c2c63166255e698428[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 21:20:17 2025 +0530
+
+    Downgrade GitHub Actions versions for checkout and Java setup; update Ruby version to 3.4.4
+
+[33mcommit e971e9e5527e6214bbf9a29c816b53620fa844c0[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 21:17:59 2025 +0530
+
+    Update Android build configuration and Fastlane setup
+    
+    - Set minimum SDK version to 21 in build.gradle.kts
+    - Update Fastfile instructions for running Firebase distribution
+    - Adjust test case timings in report.xml
+    - Bump version number to 1.0.7+1 in pubspec.yaml
+
+[33mcommit a6ec820ee50284610e5004c6dbcf07bec866a5df[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 20:50:20 2025 +0530
+
+    Update GitHub Actions workflow and Gemfile for improved dependencies and versions
+
+[33mcommit 7e4848e51a382b2741124aa3a8f682a664ecc1e6[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 20:39:55 2025 +0530
+
+    Add x86_64-linux platform support to Gemfile.lock
+
+[33mcommit 2624e76887dcc0051972095295c4685b04db5ad6[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 20:31:03 2025 +0530
+
+    Add GitHub Actions workflow for Android Fastlane with Firebase App Distribution
+    bynoed version to 1.0.5+1
+
+[33mcommit eef2dd9814c875c0b26c93942283946db919b68c[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 09:57:30 2025 +0530
+
+    Update Firebase CLI token handling to use environment variable
+
+[33mcommit 2cbca2f8f5480aad1a8b7cb0cab7faa9ac5b9fb6[m[33m ([m[1;32mmain[m[33m)[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 09:32:44 2025 +0530
+
+    Add installation and setup instructions steps for Fastlane in Fastfile
+
+[33mcommit ff3eab0df70a61b5b36ca3bdee385b5558c11015[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 09:10:09 2025 +0530
+
+    Add Fastlane setup for Firebase App Distribution and update version
+
+[33mcommit 2cb04cb0f9a0d6df080fec717af597353edf313a[m
+Author: MohammedAnwar2 <moanbm123@gmail.com>
+Date:   Sat May 17 07:14:39 2025 +0530
+
+    first commit
