@@ -5,13 +5,14 @@ plugins {
     // END: FlutterFire Configuration
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
-    id("dev.flutter.flutter-gradle-plugin")
+   id("dev.flutter.flutter-gradle-plugin")
 }
 
 android {
     namespace = "com.example.flavors"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 34
     ndkVersion = "27.0.12077973"
+    buildToolsVersion = "34.0.0"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -63,4 +64,19 @@ android {
 
 flutter {
     source = "../.."
+}
+dependencies {
+    // Add to all variants
+    implementation("com.google.firebase:firebase-appdistribution-api-ktx:16.0.0-beta15")
+
+    // Add to beta flavor only (note: make sure you defined "beta" flavor above)
+    //"production"("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    implementation("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    //implementationProduction("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    // add("implementationDevelopmentDebug", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    // add("implementationDevelopmentRelease", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    // add("implementationProductionDebug", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    // add("implementationProductionRelease", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    // productionImplementation("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+
 }
