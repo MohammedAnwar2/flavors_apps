@@ -11,7 +11,7 @@ platform :android do
             android_artifact_type: "APK",
             android_artifact_path: "../build/app/outputs/flutter-apk/app-production-release.apk",
             groups: "flavors_app",
-            release_notes: "Release notes for the new version"
+            release_notes: "Official release with the ability for testers to send feedback on the app.",
         )
   end
 end
@@ -41,4 +41,4 @@ end
 # step to run the fastlane
 # 1. Open the terminal of your project and navigate to the android directory
 # 2. you should be in the android directory when you run the following command
-# Run "fastlane android firebase_distribution"
+# Run "fastlane android firebase_distribution" or "bundle exec fastlane android firebase_distribution"
