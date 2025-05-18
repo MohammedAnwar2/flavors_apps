@@ -12,7 +12,7 @@ android {
     namespace = "com.example.flavors"
     compileSdk = 34
     ndkVersion = "27.0.12077973"
-    buildToolsVersion = "34.0.0"
+    // buildToolsVersion = "34.0.0"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -66,17 +66,12 @@ flutter {
     source = "../.."
 }
 dependencies {
-    // Add to all variants
+    // Add the Firebase App Distribution API library to all flavors (safe for Google Play compliance)
     implementation("com.google.firebase:firebase-appdistribution-api-ktx:16.0.0-beta15")
 
-    // Add to beta flavor only (note: make sure you defined "beta" flavor above)
-    //"production"("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    implementation("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    //implementationProduction("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    // add("implementationDevelopmentDebug", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    // add("implementationDevelopmentRelease", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    // add("implementationProductionDebug", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    // add("implementationProductionRelease", "com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-    // productionImplementation("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
-
+    // Add the full Firebase App Distribution library to the 'production' flavor only (for pre-release testing)
+    "productionImplementation"("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
+    
+    // Note: To add the dependency to another specific flavor (e.g., 'development'), use:
+    // "developmentImplementation"("com.google.firebase:firebase-appdistribution:16.0.0-beta15")
 }
